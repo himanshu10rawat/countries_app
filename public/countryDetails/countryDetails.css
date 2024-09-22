@@ -1,0 +1,121 @@
+.country-details {
+    padding-block: 100px;
+}
+
+.back-button {
+    background-color: var(--content-bg);
+    color: var(--text-color);
+    border: none;
+    outline: none;
+    padding: 0.5rem 2rem;
+    box-shadow: 0 0 8px 2px var(--box-shadow);
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.back-button:hover {
+    transform: translateX(-5px);
+    box-shadow: 0 0 16px 4px var(--box-shadow);
+}
+
+.back-button span {
+    margin-right: 0.25rem;
+}
+
+.country-details-content {
+    margin-top: 100px;
+}
+
+.details-list {
+    margin-left: 5rem;
+}
+
+.country-name {
+    margin-bottom: 1rem;
+}
+
+.details-list ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.details-list ul li {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.details-list ul li+li {
+    margin-top: 0.5rem;
+}
+
+.details-list ul li span {
+    font-weight: 300;
+}
+
+.border-countries {
+    font-weight: 600;
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.border-countries a {
+    font-weight: 300;
+    padding: 0.25rem 1rem;
+    box-shadow: 0 0 8px 2px var(--box-shadow);
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+    color: var(--text-color);
+    background-color: var(--content-bg);
+    transition: all ease-in-out 0.3s;
+}
+
+.border-countries a:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 16px 2px var(--box-shadow);
+}
+
+.country-flag {
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width:1200px) {
+    .details-list {
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .details-list {
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+
+    .country-details {
+        padding-top: 50px;
+    }
+
+    .country-details-content {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .country-details {
+        padding-top: 20px;
+    }
+
+    .country-details-content {
+        margin-top: 20px;
+    }
+}

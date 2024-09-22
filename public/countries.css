@@ -1,0 +1,176 @@
+.countries-section {
+    margin-top: 50px;
+}
+
+.search-filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-box {
+    background-color: var(--content-bg);
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 0 8px 2px var(--box-shadow);
+    padding: 0 20px 0 30px;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #999;
+    width: 35%;
+}
+
+.search-box input {
+    padding-block: 18px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: inherit;
+    background-color: inherit;
+    color: inherit;
+}
+
+.select-box {
+    background-color: var(--content-bg);
+    box-shadow: 0 0 8px 2px var(--box-shadow);
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #999;
+    width: 20%;
+    padding: 18px 20px;
+}
+
+.select-box select {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: inherit;
+    background-color: inherit;
+    color: inherit;
+}
+
+.countries-content {
+    margin-top: 50px;
+}
+
+.list-box {
+    display: block;
+    box-shadow: 0 2px 4px 2px var(--box-shadow);
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    background-color: var(--content-bg);
+    transition: all ease-in-out 0.5s;
+}
+
+.list-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px 2px var(--box-shadow);
+}
+
+.list-box img {
+    width: 100%;
+    aspect-ratio: 1 / 0.75;
+    border: 1px solid var(--box-shadow);
+    object-fit: cover;
+    object-position: center;
+    border-radius: 6px 6px 0 0;
+}
+
+.list-details {
+    padding: 1rem 1.25rem 2rem;
+}
+
+.list-details h2 {
+    font-size: 21px;
+    margin-bottom: 1rem;
+    font-weight: 800;
+}
+
+.list-details ul {
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.list-details ul li+li {
+    margin-top: 0.25rem;
+}
+
+.list-details ul li span {
+    font-weight: 300;
+}
+
+/* shimmer Effect Css */
+.shimmer-box {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.shimmer-box .shimmer-image {
+    background-color: #ddd;
+    aspect-ratio: 1/0.75;
+}
+
+.shimmer-text {
+    padding-top: 1rem;
+}
+
+.shimmer-text h2 {
+    height: 25px;
+    background-color: #ddd;
+}
+
+.shimmer-text ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.shimmer-text ul li {
+    height: 20px;
+    background-color: #ddd;
+}
+
+.shimmer-text ul li+li {
+    margin-top: 0.5rem;
+}
+
+.something-wrong {
+    font-size: 1.75rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    color: #999;
+}
+
+@media screen and (max-width: 576px) {
+
+    .countries-section,
+    .countries-content {
+        margin-top: 20px;
+    }
+
+    .search-filter {
+        flex-direction: column;
+    }
+
+    .search-box {
+        margin-bottom: 1rem;
+    }
+
+    .search-box,
+    .select-box {
+        width: 100%;
+    }
+}

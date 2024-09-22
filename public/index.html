@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./header.css" />
+    <link rel="stylesheet" href="./countries.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD"
+      crossorigin="anonymous"
+    />
+    <script src="./main.js" defer></script>
+    <title>Countries App</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="./index.html">Where in the world?</a>
+          <div class="theme-changer">
+            <span class="icon"></span>
+            <span class="name"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="countries-section">
+        <div class="container">
+          <div class="search-filter">
+            <label class="search-box" for="search-bar">
+              <span><i class="fa-solid fa-magnifying-glass"></i></span>
+              <input
+                type="search"
+                id="search-bar"
+                placeholder="Search for a country..."
+              />
+            </label>
+
+            <label class="select-box" for="select-box">
+              <select name="select-box" id="select-box">
+                <option hidden>Filter by Region</option>
+                <option value="Africa">Africa</option>
+                <option value="America">America</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
+              </select>
+            </label>
+          </div>
+          <div class="countries-content">
+            <div class="row"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
